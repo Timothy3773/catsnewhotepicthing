@@ -1,0 +1,20 @@
+@font-face {
+    font-family: Whitney;
+    src: url(https://timothy3773.github.io/fonts/whitney.woff)
+}
+
+body {
+    background-color: #23272A;
+}
+
+nav {
+    margin-top: 56px;
+    margin-left: 40px;
+}
+
+.header {
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    font-family: Whitney
+}
