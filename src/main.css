@@ -7,20 +7,17 @@ body {
     background-color: #23272A;
 }
 
-nav {
-    margin-top: 56px;
-    margin-left: 40px;
-}
-
-.header {
-    font-size: 45px;
-    font-weight: bold;
+.nav {
+    padding: 40px;
+    display: inline-block;
+    position: relative;
+    font-family: Whitney;
     color: white;
-    font-family: Whitney
+    font-size: 45px;
 }
 
-.header img {
-    border-radius: 50%;
+.nav img {
     width: 100px;
-    transform: translate(-10px, 39px)
+    vertical-align: middle;
+    border-radius: 50%;
 }
