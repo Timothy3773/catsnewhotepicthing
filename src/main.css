@@ -8,6 +8,7 @@ body {
 }
 
 .nav {
+    font-weight: bold;
     padding: 40px;
     display: inline-block;
     position: relative;
@@ -20,4 +21,55 @@ body {
     width: 100px;
     vertical-align: middle;
     border-radius: 50%;
+}
+
+.servers {
+    flex-flow: row;
+    padding: 5px;
+}
+
+
+.top {
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+}
+
+.top img {
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+
+
+.server {
+    background-color: #282d30;
+    border: 1px solid #343a3f;
+    border-radius: 15px;
+    max-width: 400px;
+    min-height: 300px;
+    max-height: 1000px;
+}
+
+.server .title {
+    font-weight: 100;
+    vertical-align: middle;
+    font-family: Whitney;
+    font-size: 25px;
+    color: white;
+}
+
+.emojis {
+    display: flexbox;
+    flex-flow: row;
+    padding: 5px;
+    background-origin: content-box;
+}
+
+.emojis img {
+    width: 40px;
+}
+
+.emojis img:hover {
+    border: 1px solid #4C4C4C;
 }
