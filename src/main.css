@@ -48,7 +48,7 @@ body {
     border-radius: 15px;
     max-width: 400px;
     min-height: 300px;
-    max-height: 1000px;
+    max-height: 1100px;
 }
 
 .server .title {
@@ -62,14 +62,43 @@ body {
 .emojis {
     display: flexbox;
     flex-flow: row;
-    padding: 5px;
+    max-height: 1000px;
+    padding: 7px;
     background-origin: content-box;
 }
 
 .emojis img {
+    border: 1px solid transparent;
     width: 40px;
 }
 
 .emojis img:hover {
     border: 1px solid #4C4C4C;
 }
+
+.joinbtn {
+    border: 1px solid #4C4C4C;
+    background-color: #43B581;
+    font-size: 25px;
+    border-radius: 3px;
+    color: white;
+}
+
+
+
+.joinbtn a {
+    font-family: Whitney;
+    text-decoration: none;
+    color: white;
+}
+
+.joinbtn:hover a::after {
+    content: " :^)";
+}
+
+.egg {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
