@@ -3,9 +3,32 @@
     src: url(https://timothy3773.github.io/fonts/whitney.woff)
 }
 
+
+
 body {
     background-color: #23272A;
+    cursor: url(http://cdn.usldiscord.tk/yeet.gif), auto;
 }
+
+p.warning {
+    font-family: Whitney;
+    color: white;
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+a:hover {
+    cursor: url(http://www.rw-designer.com/cursor-view/122567.gif), pointer;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
+
+
 
 .nav {
     font-weight: bold;
@@ -24,8 +47,9 @@ body {
 }
 
 .servers {
-    flex-flow: row;
+    display: flex;
     padding: 5px;
+    flex-wrap: wrap;
 }
 
 
@@ -33,6 +57,7 @@ body {
     padding: 5px;
     display: inline-block;
     position: relative;
+    margin: 5px;
 }
 
 .top img {
@@ -40,15 +65,36 @@ body {
     border-radius: 50%;
 }
 
+hr {
+    border-color: #939393;
+    border-style: solid;
+}
 
+.seper {
+    background-color: #1f2325;
+    text-align: center;
+    font-family: Whitney;
+    color: white;
+    font-weight: 100;
+    font-size: 40px;
+}
+
+.footer {
+    position: static;
+    bottom: 0;
+    font-family: Whitney;
+    color: white;
+}
 
 .server {
+    margin: 5px;
     background-color: #282d30;
     border: 1px solid #343a3f;
     border-radius: 15px;
-    max-width: 400px;
+    min-width: 250px;
+    max-width: 320px;
     min-height: 300px;
-    max-height: 1100px;
+    max-height: 4000px;
 }
 
 .server .title {
@@ -59,27 +105,42 @@ body {
     color: white;
 }
 
+.server .title a {
+    color: inherit
+}
+
+
 .emojis {
-    display: flexbox;
-    flex-flow: row;
-    max-height: 1000px;
-    padding: 7px;
-    background-origin: content-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
 }
 
 .emojis img {
     border: 1px solid transparent;
-    width: 40px;
+    width: 35px;
+    object-fit: scale-down;
+    height: 35px;
+    margin: 2px;
+    box-sizing: border-box;
+    border-spacing: 5px;
 }
 
 .emojis img:hover {
+    box-sizing: border-box;
     border: 1px solid #4C4C4C;
+}
+
+.joinserver {
+    text-align: center;
+    margin-bottom: 7px;
 }
 
 .joinbtn {
     border: 1px solid #4C4C4C;
     background-color: #43B581;
     font-size: 25px;
+    justify-content: center;
     border-radius: 3px;
     color: white;
 }
@@ -92,13 +153,18 @@ body {
     color: white;
 }
 
-.joinbtn:hover a::after {
-    content: " :^)";
-}
+
 
 .egg {
     position: fixed;
     bottom: 0;
     right: 0;
+    width: 15px;
 }
 
+.egg:hover {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    filter: grayscale(20)
+}
